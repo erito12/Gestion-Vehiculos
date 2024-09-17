@@ -1,1 +1,17 @@
-<p>layout works!</p>
+<div class="min-h-screen bg-gray-50/50">
+  <app-sidebar />
+  <div class="p-4 xl:ml-80">
+    <nav
+      class="block w-full max-w-full bg-transparent text-white shadow-none rounded-xl transition-all px-0 py-1"
+    >
+      <app-header />
+    </nav>
+    <div class="mt-2 mb-10">
+      <h1>Aqui va la redireccion</h1>
+      <router-outlet />
+    </div>
+    <div class="text-blue-gray-500 flex items-end justify-end">
+      <app-footer />
+    </div>
+  </div>
+</div>
