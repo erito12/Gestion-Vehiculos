@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [RouterLink                                                                                                                                                                                                                                                                                                          ],
+  imports: [ RouterLink                                                                                                                                                                                                                                                                                                          ],
   templateUrl: './login.component.html',
 })
 export default class LoginComponent {}

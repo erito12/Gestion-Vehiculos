@@ -22,13 +22,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-custom-table',
+  selector: 'app-diver-list',
   standalone: true,
   imports: [MatTableModule],
-  templateUrl: './custom-table.component.html',
-  styleUrl: './custom-table.component.css',
+  templateUrl: './diver-list.component.html',
+  styleUrl: './diver-list.component.css'
 })
-export class CustomTableComponent {
+export class DiverListComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }

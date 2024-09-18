@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CustomTableComponent } from '../../components/custom-table/custom-table.component';
+import { DiverListComponent } from "../../components/diver-list/diver-list.component";
 
 @Component({
   selector: 'app-drivers',
   standalone: true,
-  imports: [CustomTableComponent],
+  imports: [ DiverListComponent],
   templateUrl: './drivers.component.html',
   styleUrl: './drivers.component.css',
 })

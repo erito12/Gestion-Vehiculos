@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CustomTableComponent } from '../../components/custom-table/custom-table.component';
+import { DiverListComponent } from '../../components/diver-list/diver-list.component';
 
 @Component({
   selector: 'app-asignments',
   standalone: true,
-  imports: [CustomTableComponent],
+  imports: [DiverListComponent],
   templateUrl: './asignments.component.html',
   styleUrl: './asignments.component.css',
 })
