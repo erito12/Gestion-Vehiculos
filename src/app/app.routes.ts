@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./layout/layout.component'),
+    loadComponent: () => import('./auth/login/login.component'),
     children: [
       {
         path: 'vehicles',
@@ -19,6 +19,7 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./managements/asignments/asignments.component'),
       },
+
       {
         path: '',
         redirectTo: 'vehicles',
@@ -29,6 +30,15 @@ export const routes: Routes = [
         redirectTo: 'vehicles',
         pathMatch: 'full',
       },
+      {
+        path:'login',
+        loadComponent: ()=> import ('./auth/login/login.component')
+      },
+      {
+        path:'login',
+        loadComponent: ()=> import ('./auth/register/register.component')
+      }
+
     ],
   },
 ];

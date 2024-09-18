@@ -9,6 +9,5 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [FooterComponent, HeaderComponent, SidebarComponent, RouterOutlet],
   templateUrl: './layout.component.html',
-  styleUrl: './layout.component.css',
 })
 export default class LayoutComponent {}

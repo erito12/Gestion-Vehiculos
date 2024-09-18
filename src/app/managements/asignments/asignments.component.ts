@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CustomTableComponent } from '../../components/custom-table/custom-table.component';
 
 @Component({
   selector: 'app-asignments',
   standalone: true,
-  imports: [],
+  imports: [CustomTableComponent],
   templateUrl: './asignments.component.html',
-  styleUrl: './asignments.component.css'
+  styleUrl: './asignments.component.css',
 })
-export default class AsignmentsComponent {
-
-}
+export default class AsignmentsComponent {}
