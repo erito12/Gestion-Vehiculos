@@ -1,1 +1,70 @@
-<p>management-assignments works!</p>
+
+<!-- component -->
+<!-- This is an example component -->
+<div class='flex items-center flex-col justify-center min-h-screen border-4 '>
+  <div class="block mb-4">
+   
+  </div>
+  <div class='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl border-2'>
+
+      <div class='max-w-md mx-auto space-y-6 '>
+         <div class="w-full max-w-md mx-auto min-w-[200px] mt-4">
+              <label class="block mb-1 text-sm text-slate-800">
+                  Cardholder Name
+              </label>
+              <input
+                  type="text"
+                  class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                  placeholder="e.g John Doe"
+              />
+              
+              <label class="block mb-1 text-sm text-slate-800 mt-4">
+                  Card Number
+              </label>
+              <input
+                  type="text"
+                  id="cardNumber"
+                  class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                  placeholder="1234 5678 9012 3456"
+                  maxlength="19"
+              />
+              
+              <div class="flex">
+                  <div class="w-full md:w-8/12 mr-4">
+                  <label class="block mb-1 text-sm text-slate-800 mt-4">
+                     Fecha
+                  </label>
+                  <input
+                      type="text"
+                      class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                      placeholder="MM/YY"
+                      maxlength="5"
+                      pattern="\d{2}/\d{2}"
+                  />
+                  </div>
+                  <div class="w-full md:w-4/12">
+                  <label class="block mb-1 text-sm text-slate-800 mt-4">
+                      CVV
+                  </label>
+                  <input
+                      type="text"
+                      class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                      placeholder="123"
+                      maxlength="3"
+                      pattern="\d{3}"
+                  />
+                  </div>
+              </div>
+              
+
+              <div class="flex flex-col  p-2">
+
+                <button class="w-full text-sm flex  justify-center bg-red-300 rounded hover:bg-red-600 text-white py-3 px-6 pl-4 mt-4">Cancelar</button>
+                <button class="w-full text-sm flex  justify-center bg-slate-800 rounded hover:bg-slate-700 text-white py-3 px-6 mt-4">Enviar</button>
+
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>

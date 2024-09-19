@@ -1,0 +1,65 @@
+<!-- component -->
+<!-- This is an example component -->
+<div class='flex items-center flex-col justify-center min-h-screen from-purple-200 via-purple-400 to-purple-600 bg-gradient-to-br'>
+    <div class="block mb-4">
+        <a target='_blank' href='https://www.creative-tim.com/twcomponents' class='block w-full px-4 py-2 text-center text-white transition-all rounded-md hover:bg-purple-500 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-80'>
+                More components on Material Tailwind.
+            </a>
+    </div>
+    <div class='w-full max-w-lg px-10 py-8 mx-auto bg-white rounded-lg shadow-xl'>
+
+        <div class='max-w-md mx-auto space-y-6'>
+           <div class="w-full max-w-md mx-auto min-w-[200px] mt-4">
+                <label class="block mb-1 text-sm text-slate-800">
+                    Cardholder Name
+                </label>
+                <input
+                    type="text"
+                    class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                    placeholder="e.g John Doe"
+                />
+                
+                <label class="block mb-1 text-sm text-slate-800 mt-4">
+                    Card Number
+                </label>
+                <input
+                    type="text"
+                    id="cardNumber"
+                    class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                    placeholder="1234 5678 9012 3456"
+                    maxlength="19"
+                />
+                
+                <div class="flex">
+                    <div class="w-full md:w-8/12 mr-4">
+                    <label class="block mb-1 text-sm text-slate-800 mt-4">
+                        Expiration Date
+                    </label>
+                    <input
+                        type="text"
+                        class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                        placeholder="MM/YY"
+                        maxlength="5"
+                        pattern="\d{2}/\d{2}"
+                    />
+                    </div>
+                    <div class="w-full md:w-4/12">
+                    <label class="block mb-1 text-sm text-slate-800 mt-4">
+                        CVV
+                    </label>
+                    <input
+                        type="text"
+                        class="w-full h-10 bg-transparent placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md"
+                        placeholder="123"
+                        maxlength="3"
+                        pattern="\d{3}"
+                    />
+                    </div>
+                </div>
+                
+                <button class="w-full text-sm flex items-center justify-center bg-slate-800 rounded hover:bg-slate-700 text-white py-3 px-6 mt-4">Purchase Now</button>
+            </div>
+
+        </div>
+    </div>
+</div>
