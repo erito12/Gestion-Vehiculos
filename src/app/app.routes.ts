@@ -1,22 +1,36 @@
 import { Routes } from '@angular/router';
 import LoginComponent from './auth/login/login.component';
 import RegisterComponent from './auth/register/register.component';
+/* import LayoutComponent from './layout/layout.component'; */
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, 
   { path: 'login', component: LoginComponent }, 
   { path: 'register', component: RegisterComponent },
+/* 
+  {
+    path: 'layout', component: LayoutComponent
+  },
+  { path: '**', redirectTo: '/login' } */
 
- /*  {
-    path: '',
-    loadComponent: () => import('./auth/login/login.component'),
+  {
+    path: 'layout',
+    loadComponent: () => import('./layout/layout.component'),
     children: [    
       
       {
-        path:'register',
-        loadComponent: ()=> import ('./auth/register/register.component')
-      }
+        path:'assignment',
+        loadComponent: ()=> import ('./pages/management-assignments/management-assignments.component')
+      },
+      {
+        path:'vehicles',
+        loadComponent: ()=> import ('./pages/management-vehicles/management-vehicles.component')
+      },
+      {
+        path:'drivers',
+        loadComponent: ()=> import ('./pages/management-drivers/management-drivers.component')
+      },
 
     ],
-  }, */
+  },
 ];
