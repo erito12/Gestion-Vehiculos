@@ -1,36 +1,31 @@
 import { Routes } from '@angular/router';
 import LoginComponent from './auth/login/login.component';
 import RegisterComponent from './auth/register/register.component';
-/* import LayoutComponent from './layout/layout.component'; */
+import { Component } from '@angular/core';
+import LayoutComponent from './layout/layout.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' }, 
-  { path: 'login', component: LoginComponent }, 
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-/* 
+  {path: 'layout', component: LayoutComponent},
   {
-    path: 'layout', component: LayoutComponent
-  },
-  { path: '**', redirectTo: '/login' } */
-
-  {
-    path: 'layout',
+    path: '',
     loadComponent: () => import('./layout/layout.component'),
-    children: [    
-      
+    children: [
       {
-        path:'assignment',
-        loadComponent: ()=> import ('./pages/management-assignments/management-assignments.component')
+        path: 'assignment',
+        loadComponent: () => import('./pages/management-assignments/management-assignments.component')
       },
       {
-        path:'vehicles',
-        loadComponent: ()=> import ('./pages/management-vehicles/management-vehicles.component')
+        path: 'vehicles',
+        loadComponent: () => import('./pages/management-vehicles/management-vehicles.component')
       },
       {
-        path:'drivers',
-        loadComponent: ()=> import ('./pages/management-drivers/management-drivers.component')
+        path: 'drivers',
+        loadComponent: () => import('./pages/management-drivers/management-drivers.component')
       },
-
     ],
   },
+ /*  { path: '**', redirectTo: '/login' }  */// Ruta wildcard opcional
 ];

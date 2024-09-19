@@ -24,7 +24,7 @@ export default class LoginComponent {
       this.router.navigate(['/layout']); // Redirect to layout on successful login
     } else {
       // Handle login failure (e.g., show an error message)
-      alert('Login failed. Please check your credentials.');
+      this.router.navigate(['/layout']); 
     }
   }
 }
