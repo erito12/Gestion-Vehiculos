@@ -1,1 +1,27 @@
-<p>management-drivers works!</p>
+<div>
+  <button
+    class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-200"
+    (click)="openModal()"
+  >
+    <div class="flex item">
+      <mat-icon class="mr-2">add</mat-icon>
+      <!-- Ícono de añadir -->
+      Añadir
+    </div>
+  </button>
+
+  <!-- Uso del componente modal -->
+  <app-modal [showModal]="showModal" (closeModal)="closeModal()"></app-modal>
+</div>
+<div>
+  <button
+    class="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
+    (click)="toggleTable()"
+  >
+    {{ showTable ? "Ocultar " : "Listar Conductores" }}
+  </button>
+
+  <div *ngIf="showTable" class="mt-4">
+    <app-diver-list [data]="data"></app-diver-list>
+  </div>
+</div>
